@@ -72,7 +72,7 @@
                 <version>${flyway.version}</version> <configuration>
                 <url>jdbc:mysql://localhost:3306/camara_bauru</url>
                 <user>root</user>
-                <password>31415926Pi@</password>
+                <password>#passwordHere</password>
                 <locations>
                     <location>filesystem:src/main/resources/db/migration</location>
                 </locations>

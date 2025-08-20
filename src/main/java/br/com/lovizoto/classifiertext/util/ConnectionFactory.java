@@ -8,7 +8,7 @@ public class ConnectionFactory {
 
     private static String URL = "jdbc:mysql://localhost:3306/camara_bauru";
     private static String USER = "root";
-    private static String PASSWORD = "31415926Pi@";
+    private static String PASSWORD = "";
 
 
     public static Connection getConnection(){
