@@ -1,4 +1,4 @@
-package br.com.lovizoto.model;
+package br.com.lovizoto.classifiertext.model;
 
 import java.util.Date;
 

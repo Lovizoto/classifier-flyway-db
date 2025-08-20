@@ -1,6 +1,6 @@
-package br.com.lovizoto.dao;
+package br.com.lovizoto.classifiertext.dao;
 
-import br.com.lovizoto.model.AnaliseAutoriaMateria;
+import br.com.lovizoto.classifiertext.model.AnaliseAutoriaMateria;
 
 import java.util.List;
 

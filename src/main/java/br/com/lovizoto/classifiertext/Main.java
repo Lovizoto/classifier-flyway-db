@@ -1,6 +1,6 @@
-package br.com.lovizoto;
+package br.com.lovizoto.classifiertext;
 
-import br.com.lovizoto.service.Analysis;
+import br.com.lovizoto.classifiertext.service.Analysis;
 
 
 public class Main {

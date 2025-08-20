@@ -1,7 +1,7 @@
-package br.com.lovizoto.dao;
+package br.com.lovizoto.classifiertext.dao;
 
-import br.com.lovizoto.model.AnaliseAutoriaMateria;
-import br.com.lovizoto.util.ConnectionFactory;
+import br.com.lovizoto.classifiertext.model.AnaliseAutoriaMateria;
+import br.com.lovizoto.classifiertext.util.ConnectionFactory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -27,12 +27,13 @@ public class AnaliseAutoriaMateriaImpl implements AnaliseAutoriaMateriaDAO {
                 "tipo, " +
                 "tema, " +
                 "subtema " +
-                "FROM analise_autoria_materia WITH (NOLOCK)";
+                "FROM analise_autoria_materia";
 
 
         try (Connection conn = ConnectionFactory.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql);
              ResultSet rs = stmt.executeQuery()) {
+
 
             final int col1Idx = 1, col2Idx = 2, col3Idx = 3, col4Idx = 4, col5Idx = 5,
                     col6Idx = 6, col7Idx = 7, col8Idx = 8, col9Idx = 9;
@@ -52,6 +53,7 @@ public class AnaliseAutoriaMateriaImpl implements AnaliseAutoriaMateriaDAO {
             }
             return listaAnaliseAutoriaMateria;
         } catch(Exception ex) {
+            System.out.println("Erro ao obter listas = " + ex);
             return null;
         }
 
