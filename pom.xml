@@ -34,6 +34,12 @@
             <version>${flyway.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>br.com.lovizoto</groupId>
+            <artifactId>gemini-classifiertext-lib</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
     <build>
